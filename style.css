@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(0 0 0);
+  position: fixed;
+  z-index: 1030;
+  width: 100%;
+  height: 14vh;
+  box-shadow: 0px 0px 10px 0px white;
+  border-radius: 0 0 15px 15px;
+}
+
+.logo {
+  margin: 20px;
+  padding: 15px;
+}
+
+.logo h1 {
+  color: white;
+  text-align: center;
+}
+
+.logo h3 {
+  color: white;
+  text-align: center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links ul {
+  float: right;
+  color: white;
+  list-style: none;
+  margin: 0 10px;
+}
+.nav-links ul li {
+  width: 80px;
+  height: 34px;
+  display: inline-block;
+  margin: 1px;
+  /* background-color: #242B2E; 
+     border-radius: 5px;*/
+  text-align: center;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+  transition: all .2s ease-in-out;
+}
+
+.section {
+  margin-top: 20vh;
+}
+
+.text-box {
+  height: 20vh;
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  margin-top: 20vh
+}
+
+.text-box h1 {
+  color: aliceblue;
+  text-align: center;
+}
+
+.color-type {
+  width: 35vw;
+  height: 13vh;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #03203c;
+  margin: 0 auto;
+  box-shadow: 0px 3px 6px 0px #4dd637;
+}
+
+.color-type h1 {
+  color: white;
+  font-size: 3em;
+  text-align: center;
+}
+
+.color-section {
+  color: white;
+  margin: 40px 0px 0px 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.color-box {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 15px;
+}
+
+.box {
+  width: 15vw;
+  height: 40vh;
+  margin: 50px 30px;
+  /*background-color: #03203c;*/
+  background-color: black;
+  position: relative;
+  box-shadow: 0px 0px 18px 5px #cad5e2;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+.color {
+  width: 90%;
+  height: 92%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.color-box2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 15px;
+}
+
+@media (max-width: 950px) {
+  .box {
+    width: 20vw;
+  }
+}
+@media (max-width: 500px) {
+  .color-box {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .box {
+    width: 60vw;
+  }
+}
+@media (max-width: 661px) {
+  .color-type {
+    width: 40vw;
+  }
+}
+
+/*hover effects*/
+
+.color-box .box .color:hover {
+  cursor: pointer;
+  
+}
+
+h1:hover{
+  cursor: default;
+}
+
+ul li a:hover{
+  color: yellow;
+  transition: all .2s ease-in-out;
+}
+
